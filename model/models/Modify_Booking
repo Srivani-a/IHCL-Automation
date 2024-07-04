@@ -1,0 +1,52 @@
+{
+	"module": "ModifyBooking",
+	"models": [
+		{
+			"name": "ModifyBookingFunctionality",
+			"elements": [
+				{
+					"key": "BookingsTab",
+					"value": "//div[contains(text(),'BOOKINGS')]",
+					"type": "XPATH"
+				
+				},
+				{
+					"key": "SortByDateIcon",
+					"value": "//span[contains(text(),'Sort by Date')]//following::img",
+					"type": "XPATH"
+				
+				},
+				{
+					"key": "ChangeDates",
+					"value": "//span[contains(text(),'CHANGE DATES')]",
+					"type": "XPATH"
+				
+				},
+				{
+					"key": "ChangeRooms",
+					"value": "//span[contains(text(),'CHANGE ROOMS')]",
+					"type": "XPATH"
+				
+				},
+				{
+					"key": "CancelBooking",
+					"value": "//span[contains(text(),'CANCEL BOOKING')]",
+					"type": "XPATH"
+				
+				},
+				{
+					"key": "SelectAllCheckbox",
+					"value": "//span[contains(text(),'Select All')]//parent::div/span/input",
+					"type": "XPATH"
+				
+				},
+				{
+					"key": "ContinueButton",
+					"value": "//button[contains(text(),'CONTINUE')]",
+					"type": "XPATH"
+				
+				}
+			]
+		}
+	]
+}

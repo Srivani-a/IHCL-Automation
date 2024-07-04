@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+<suite name="Regression">
+	<listeners>
+       <listener class-name="com.sslweb.automation.listeners.PDFReport" />
+       <listener class-name="com.sslweb.automation.test.ApplicationContextInitializer" />
+	</listeners>
+	<test name="PLP TestScripts" allow-return-values="true">
+     <classes>
+      	<class name="com.techouts.ssbweb.testscripts.PLP.SSBPLPBasicFilterTest"/>
+      	<class name="com.techouts.ssbweb.testscripts.PLP.SSBPLPClearAllFunctionalityTest"/>
+      	<class name="com.techouts.ssbweb.testscripts.PLP.SSBPLPCategoryFilterTest"/>
+      	<class name="com.techouts.ssbweb.testscripts.PLP.SSBPLPBrandFilterTest"/>
+      	<class name="com.techouts.ssbweb.testscripts.PLP.SSBPLPSortByDropDownTest"/>
+      	<class name="com.techouts.ssbweb.testscripts.PLP.SSBPLPPriceFilterTest"/>
+      	<class name="com.techouts.ssbweb.testscripts.PLP.SSBPLPVerifyDetailsFunctionalityTest"/>
+    </classes>
+  </test> <!-- Test -->
+	<test name="PDP Test Scripts" allow-return-values="true">
+    <classes>
+      <class name="com.techouts.ssbweb.testscripts.PDP.SSBPDPAddtoWishListGuestUserTest"/>
+      <class name="com.techouts.ssbweb.testscripts.PDP.SSBPDPAddtoWishListRegisteredUserTest"/>
+      <class name="com.techouts.ssbweb.testscripts.PDP.SSBPDPVerifyDeliveryDetailsTest"/>
+      <class name="com.techouts.ssbweb.testscripts.PDP.SSBPDPVErifyDetailsTest"/>
+    </classes>
+  </test> <!-- Test -->
+	<test name="Cart Page Test Scripts" allow-return-values="true">
+    <classes>
+      <class name="com.techouts.ssbweb.testscripts.CartPage.SSBCartPageApplyCouponSampleTest"/>
+      <class name="com.techouts.ssbweb.testscripts.CartPage.SSBCartPageDefaultFunctionalitiesTest"/>
+    </classes>
+  </test> <!-- Test -->
+  <test name="Checkout Payment Test Scripts" allow-return-values="true">
+    <classes>
+      <class name="com.techouts.ssbweb.testscripts.CheckoutPage.SSBCheckoutPageCreditCardPayTest"/>
+      <class name="com.techouts.ssbweb.testscripts.CheckoutPage.SSBCheckoutPageDebitCardPayTest"/>
+      <class name="com.techouts.ssbweb.testscripts.CheckoutPage.SSBCheckoutPageNetBankingTest"/>
+      <class name="com.techouts.ssbweb.testscripts.CheckoutPage.SSBCheckoutPageUPITest"/>
+      <class name="com.techouts.ssbweb.testscripts.CheckoutPage.SSBCheckoutPageWalletTest"/>
+      <class name="com.techouts.ssbweb.testscripts.CheckoutPage.SSBCheckoutPageCODTest"/>
+    </classes>
+  </test> <!-- Test -->
+  <test name="My Account Test Scripts" allow-return-values="true">
+    <classes>
+       <class name="com.techouts.sslweb.testscripts.MyAccount.SSBMyAccountProfilePageAddAddressTest"/>
+       <class name="com.techouts.sslweb.testscripts.MyAccount.SSBMyAccountProfilePageDeleteAddressTest"/>
+       <class name="com.techouts.sslweb.testscripts.MyAccount.SSBMyAccountOrderPageTrackOrderTest"/>
+       <class name="com.techouts.sslweb.testscripts.MyAccount.SSBMyAccountOrderPageFilterFunctionalityTest"/>
+       <class name="com.techouts.sslweb.testscripts.MyAccount.SSBMyAccountProfilePageEditProfileTest"/>
+       <class name="com.techouts.sslweb.testscripts.MyAccount.SSBMyAccountBeautyProfilePageFunctionalityTest"/>
+       <class name="com.techouts.sslweb.testscripts.MyAccount.SSBMyAccountMyWalletPageFunctionalityTest"/>
+    </classes>
+  </test> <!-- Test -->
+</suite> <!-- Suite -->

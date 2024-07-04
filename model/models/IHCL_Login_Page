@@ -1,0 +1,46 @@
+{
+	"module": "LoginFunctionalityCheck",
+	"models": [
+		{
+			"name": "IHCLLoginFunctionality",
+			"elements": [
+				{
+					"key": "SignIn",
+					"value": "//span[contains(text(),'LOGIN / JOIN')]",
+					"type": "XPATH"
+				},
+				
+				{
+					"key": "MobileNumber",
+					"value": "//input[@name='senderMobile']",
+					"type": "XPATH"
+				},
+				
+				{
+					"key": "IncorrectMobileNumber",
+					"value": "//p[contains(text(),'Incorrect mobile number entered. Please enter the correct number.')]",
+					"type": "XPATH"
+				},
+				
+				{
+					"key": "TermsCheckBox",
+					"value": "//input[@type='checkbox']//ancestor::span",
+					"type": "XPATH"
+				},
+				
+				{
+					"key": "ContinueButton",
+					"value": "//button[contains(text(),'CONTINUE')]",
+					"type": "XPATH"
+				},
+				{
+					"key": "EnterOtp",
+					"value": "//form[contains(@class,'MuiBox-root css-l484w7')]/div/div/div/input",
+					"type": "XPATH"
+				}
+				
+				
+			]
+		}
+	]
+}

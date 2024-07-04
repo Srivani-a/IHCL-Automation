@@ -1,0 +1,182 @@
+{
+	"module": "BookAStay",
+	"models": [
+		{
+			"name": "BookAStayFunctionality",
+			"elements": [
+				{
+					"key": "BookAStayButton",
+					"value": "//button[contains(text(),'BOOK A STAY')]",
+					"type": "XPATH"
+				
+				},
+				{
+					"key": "SearchBar",
+					"value": "//input[@placeholder='Find a Hotel or Destination']",
+					"type": "XPATH"
+				
+				},
+				{
+					"key": "SearchResult",
+					"value": "//input[@placeholder='Find a Hotel or Destination']//following::div[contains(@class,'MuiBox')]/div",
+					"type": "XPATH"
+				
+				},
+				{
+					"key": "CheckRatesButton",
+					"value": "//button[contains(text(),' Check rates')]",
+					"type": "XPATH"
+				
+				},
+				{
+					"key": "PlanYourStayLabel",
+					"value": "//h3[contains(text(),'Plan Your Stay')]",
+					"type": "XPATH"
+				
+				},
+				{
+					"key": "RoomRatesTab",
+					"value": "//button[contains(text(),'Room Rates')]",
+					"type": "XPATH"
+				
+				},
+				{
+					"key": "MemberPackagesTab",
+					"value": "//h4[contains(text(),'Member Packages')]",
+					"type": "XPATH"
+				
+				},
+				{
+					"key": "OtherPackagesTab",
+					"value": "//h4[contains(text(),'Other Packages')]",
+					"type": "XPATH"
+				
+				},
+				{
+					"key": "MemberRateSelectButton",
+					"value": "//div/span[contains(text(),'MEMBER RATE')]//following::button",
+					"type": "XPATH"
+				
+				},
+				{
+					"key": "StandardRateSelectButton",
+					"value": "//div/span[contains(text(),'STANDARD RATE')]//following::button",
+					"type": "XPATH"
+				
+				},
+				{
+					"key": "ReservationLabel",
+					"value": "//h3[contains(text(),'RESERVATION')]",
+					"type": "XPATH"
+				
+				},
+				{
+					"key": "TermsAndConditionsText",
+					"value": "//span[contains(text(),'I have read and agree to the ')]",
+					"type": "XPATH"
+				
+				},
+				{
+					"key": "PrivacyPolicyCheckbox",
+					"value": "//input[@type='checkbox']",
+					"type": "XPATH"
+				
+				},
+				{
+					"key": "PayNowButton",
+					"value": "//button[contains(text(),'PAY NOW')]",
+					"type": "XPATH"
+				
+				},
+				{
+					"key": "PayAtHotelButton",
+					"value": "//button[contains(text(),'PAY AT HOTEL')]",
+					"type": "XPATH"
+				
+				},
+				{
+					"key": "ConfirmAndProceedButton",
+					"value": "//button[contains(text(),'CONFIRM AND PROCEED')]",
+					"type": "XPATH"
+				
+				},
+				{
+					"key": "CardNumber",
+					"value": "//input[@id='creditCardNumber']",
+					"type": "XPATH"
+				
+				},
+				{
+					"key": "ExpiryMonth",
+					"value": "//select[@id='expiryMonthCreditCard']",
+					"type": "XPATH"
+				
+				},
+				{
+					"key": "ExpiryYear",
+					"value": "//select[@id='expiryYearCreditCard']",
+					"type": "XPATH"
+				
+				},
+				{
+					"key": "CVVNumber",
+					"value": "//input[@id='CVVNumberCreditCard']",
+					"type": "XPATH"
+				
+				},
+				{
+					"key": "MakePaymentButton",
+					"value": "//a[@id='SubmitBillShip']",
+					"type": "XPATH"
+				
+				},
+				{
+					"key": "SendResponseButton",
+					"value": "//button[contains(text(),'Send Response')]",
+					"type": "XPATH"
+				
+				},
+				{
+					"key": "BookingConfirmedLabel",
+					"value": "//span[contains(text(),'Booking Confirmed')]",
+					"type": "XPATH"
+				
+				},
+				{
+					"key": "ItineraryNumber",
+					"value": "//span[contains(text(),'ITINERARY NUMBER')]//following::h4",
+					"type": "XPATH"
+				
+				},
+				{
+					"key": "BookingStatus",
+					"value": "//span[contains(text(),'BOOKING STATUS')]//following::h4",
+					"type": "XPATH"
+				
+				},
+				{
+					"key": "MyAccountIconBookingConfirmPage",
+					"value": "//span[contains(text(),'ACCOUNT')]",
+					"type": "XPATH"
+				
+				},{
+					"key": "LogoutButton",			
+					"value": "//span[contains(text(),'LOG OUT')]",
+					"type": "XPATH"
+				},
+				{
+					"key": "MyAccountIconHomePage",
+					"value": "//div[contains(text(),'ACCOUNT')]",
+					"type": "XPATH"
+				
+				},
+				{
+					"key": "YesButton",
+					"value": "//button[contains(text(),'YES')]",
+					"type": "XPATH"
+				
+				}
+			]
+		}
+	]
+}

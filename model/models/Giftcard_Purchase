@@ -1,0 +1,189 @@
+{
+	"module": "GiftCardJourney",
+	"models": [
+		{
+			"name": "GiftCardJourneyElements",
+			"elements": [
+				{
+					"key": "MyAccountIconHomePage",
+					"value": "//div[contains(text(),'ACCOUNT')]",
+					"type": "XPATH"
+				
+				},
+				{
+					"key": "MoreLink",
+					"value": "//span[contains(text(),'MORE')]",
+					"type": "XPATH"
+				
+				},
+				{
+					"key": "Gifting",
+					"value": "//span[contains(text(),'GIFTING ')]",
+					"type": "XPATH"
+				
+				},
+				{
+					"key": "GiftCards",
+					"value": "//div[@aria-label='card-with-hover']//h3[contains(text(),'GIFT CARDS')]",
+					"type": "XPATH"
+				
+				},
+				{
+					"key": "GiftCardsMore",
+					"value": "//div[@aria-label='card-with-hover']//h3[contains(text(),'GIFT CARDS')]//following-sibling::div//span[contains(text(),'MORE')]",
+					"type": "XPATH"
+				
+				},
+				{
+					"key": "EGiftCards",
+					"value": "//span[contains(text(),'E-GIFT')]/parent::p",
+					"type": "XPATH"
+				
+				},
+				{
+					"key": "PhysicalGiftCards",
+					"value": "//span[contains(text(),'PHYSICAL')]/parent::p",
+					"type": "XPATH"
+				
+				},
+				{
+					"key": "WeddingGiftCards",
+					"value": "//span[contains(text(),'WEDDING')]/parent::p",
+					"type": "XPATH"
+				
+				},
+				{
+					"key": "CardBalanceReload"
+					"value": "//span[contains(text(),'CARD BALANCE')]/parent::p",
+					"type": "XPATH"
+				
+				},
+				{
+					"key": "BuyNowButton"
+					"value": "//h4[contains(text(),'Signature')]//following-sibling::button",
+					"type": "XPATH"
+				
+				},
+				{
+					"key": "EnterAmount"
+					"value": "//input[@name='amount']",
+					"type": "XPATH"
+				
+				},
+				{
+					"key": "EnterDetailsLabel"
+					"value": "//h4[contains(text(),'ENTER DETAILS')]",
+					"type": "XPATH"
+				
+				},
+				{
+					"key": "Quantity"
+					"value": "//div[@aria-haspopup='listbox']",
+					"type": "XPATH"
+				
+				},
+				{
+					"key": "QuantityClick"
+					"value": "//input[contains(@class,'MuiSelect-nativeInput')]",
+					"type": "XPATH"
+				
+				},
+				{
+					"key": "QuantitySelection"
+					"value": "//ul[@role='listbox']/li[@data-value='1']",
+					"type": "XPATH"
+				
+				},
+				{
+					"key": "Address"
+					"value": "//textarea[@name='senderAddress']",
+					"type": "XPATH"
+				
+				},
+				{
+					"key": "Pincode"
+					"value": "//input[@name='senderPinCode']",
+					"type": "XPATH"
+				
+				},
+				{
+					"key": "MyselfButton"
+					"value": "//button[contains(text(),'MYSELF')]",
+					"type": "XPATH"
+				
+				},
+				{
+					"key": "PreviewGiftCardButton"
+					"value": "//button[contains(text(),'PREVIEW GIFT CARD')]",
+					"type": "XPATH"
+				
+				},
+				{
+					"key": "PrivacyPolicyText"
+					"value": "//span[contains(text(),'I agree to the')]",
+					"type": "XPATH"
+				
+				},
+				{
+					"key": "ProceedToPaymentButton"
+					"value": "//button[contains(text(),'PROCEED TO PAYMENT')]",
+					"type": "XPATH"
+				
+				},
+				{
+					"key": "PayNowButton"
+					"value": "//button[contains(text(),'PAY NOW')]",
+					"type": "XPATH"
+				
+				},
+				{
+					"key": "CardNumber"
+					"value": "//input[@placeholder='Enter card number here']",
+					"type": "XPATH"
+				
+				},{
+					"key": "ExpiryMonthYear",
+					"value": "//input[@placeholder='MM/YY']",
+					"type": "XPATH"
+				
+				},
+				{
+					"key": "CVV",
+					"value": "//input[@placeholder='CVV']",
+					"type": "XPATH"
+				
+				},
+				{
+					"key": "ProceedToPayButton",
+					"value": "//article[contains(text(),'PROCEED TO PAY')]",
+					"type": "XPATH"
+				
+				},
+				{
+					"key": "OptOutForNowButton",
+					"value": "//article[contains(text(),'Opt out for now')]",
+					"type": "XPATH"
+				
+				},
+				{
+					"key": "SendResponseButton",
+					"value": "//button[contains(text(),'Send Response')]",
+					"type": "XPATH"
+				
+				},
+				{
+					"key": "CongratulationsLabel",
+					"value": "//span[contains(text(),'Congratulations')]",
+					"type": "XPATH"
+				
+				},
+				{
+					"key": "OrderNumber",
+					"value": "//span[contains(text(),'ORDER NUMBER')]/following-sibling::h3",
+					"type": "XPATH"
+				
+				}
+			]
+		}
+	]
+}

@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+<suite name="Demo">
+	<listeners>
+       <listener class-name="com.web.automation.listeners.PDFReport" />
+       <listener class-name="com.web.automation.test.ApplicationContextInitializer" />
+	</listeners>
+	<test name="IHCL Gift Card Journey" allow-return-values="true">
+
+    <classes>
+    	<class name="com.techouts.ihclweb.testscripts.giftcard.GiftCardPurchaseTest"/>
+<!--    	<class name="com.techouts.ihclweb.testscripts.bookingjourney.BookAStayJourneyTest"/>-->
+<!--     	<class name="com.techouts.ihclweb.testscripts.loginfunctionality.IHCLLoginFunctionalityMobileNumberTest"/>-->
+      <!-- <class name="com.techouts.ssbweb.testscripts.PLP.SSBPLPClearAllFunctionalityTest"/>
+      <class name="com.techouts.ssbweb.testscripts.PLP.SSBPLPCategoryFilterTest"/>
+      <class name="com.techouts.ssbweb.testscripts.PLP.SSBPLPBrandFilterTest"/>
+      <class name="com.techouts.ssbweb.testscripts.PLP.SSBPLPSortByDropDownTest"/>
+      <class name="com.techouts.ssbweb.testscripts.PLP.SSBPLPPriceFilterTest"/>
+      <class name="com.techouts.ssbweb.testscripts.PLP.SSBPLPVerifyDetailsFunctionalityTest"/> -->
+    </classes>
+  </test> <!-- Test -->
+</suite> <!-- Suite -->

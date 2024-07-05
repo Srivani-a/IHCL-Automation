@@ -156,7 +156,7 @@
 				},
 				{
 					"key": "MyAccountIconBookingConfirmPage",
-					"value": "//span[contains(text(),'ACCOUNT')]",
+					"value": "//a[contains(text(),'ACCOUNT')]",
 					"type": "XPATH"
 				
 				},{
@@ -166,7 +166,7 @@
 				},
 				{
 					"key": "MyAccountIconHomePage",
-					"value": "//div[contains(text(),'ACCOUNT')]",
+					"value": "//a[contains(text(),'ACCOUNT')]",
 					"type": "XPATH"
 				
 				},

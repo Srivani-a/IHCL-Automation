@@ -294,6 +294,36 @@ public class GiftCardHelper extends GlobalExceptionHandler{
 		}
 	}
 	
+	//Click on Select Credit Card
+		public void selectCreditCard() {
+			try {
+				if (WebElementOperationsWeb.isDisplayed(driver, GiftCardJourneyElements.getSelectCreditCard())) {
+					WebElementOperationsWeb.scrollTo(driver, GiftCardJourneyElements.getSelectCreditCard());
+					WebElementOperationsWeb.jsClick(driver, GiftCardJourneyElements.getSelectCreditCard());
+					WebElementOperationsWeb.park(5);
+				} else {
+					throw new IHCLBusinessException("Credit Card option [" + GiftCardJourneyElements.getSelectCreditCard() + IS_NOT_DISPLAYED);
+				}
+			} catch (Exception e) {
+				handleOnException("Unknown error occured while clicking on Credit Card option: "+ GiftCardJourneyElements.getSelectCreditCard(), e);
+			}
+		}
+		
+		//Click on Select Credit Card checkbox
+				public void selectCreditCardCheckBox() {
+					try {
+						if (WebElementOperationsWeb.isDisplayed(driver, GiftCardJourneyElements.getSecureCardCheckBox())) {
+							WebElementOperationsWeb.scrollTo(driver, GiftCardJourneyElements.getSecureCardCheckBox());
+							WebElementOperationsWeb.jsClick(driver, GiftCardJourneyElements.getSecureCardCheckBox());
+							WebElementOperationsWeb.park(5);
+						} else {
+							throw new IHCLBusinessException("Credit Card option [" + GiftCardJourneyElements.getSecureCardCheckBox() + IS_NOT_DISPLAYED);
+						}
+					} catch (Exception e) {
+						handleOnException("Unknown error occured while clicking on Credit Card option: "+ GiftCardJourneyElements.getSecureCardCheckBox(), e);
+					}
+				}
+		
 	//Enter Card Number
 	public void sendCardNumber(String testCaseName, String sheetName, int serialNo) {
 		try {

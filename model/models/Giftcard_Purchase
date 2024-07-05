@@ -18,19 +18,19 @@
 				},
 				{
 					"key": "Gifting",
-					"value": "//span[contains(text(),'GIFTING ')]",
+					"value": "//a[contains(text(),'GIFTING ')]",
 					"type": "XPATH"
 				
 				},
 				{
 					"key": "GiftCards",
-					"value": "//div[@aria-label='card-with-hover']//h3[contains(text(),'GIFT CARDS')]",
+					"value": "(//div[@aria-label='card-with-hover']//h3[contains(text(),'GIFT CARDS')])[2]",
 					"type": "XPATH"
 				
 				},
 				{
 					"key": "GiftCardsMore",
-					"value": "//div[@aria-label='card-with-hover']//h3[contains(text(),'GIFT CARDS')]//following-sibling::div//span[contains(text(),'MORE')]",
+					"value": "((//div[@aria-label='card-with-hover']//h3[contains(text(),'GIFT CARDS')])[1])//following-sibling::div//a[contains(text(),'MORE')]",
 					"type": "XPATH"
 				
 				},
@@ -114,7 +114,7 @@
 				},
 				{
 					"key": "PreviewGiftCardButton"
-					"value": "//button[contains(text(),'PREVIEW GIFT CARD')]",
+					"value": "//a[contains(text(),'PREVIEW GIFT CARD')]",
 					"type": "XPATH"
 				
 				},
@@ -132,7 +132,19 @@
 				},
 				{
 					"key": "PayNowButton"
-					"value": "//button[contains(text(),'PAY NOW')]",
+					"value": "//a[contains(text(),'PAY NOW')]",
+					"type": "XPATH"
+				
+				},
+				{
+					"key": "SelectCreditCard",
+					"value": "//article[contains(text(),'Opt out for now')]",
+					"type": "XPATH"
+				
+				},
+				{
+					"key": "SecureCardCheckBox",
+					"value": "//div[@id='1000183']",
 					"type": "XPATH"
 				
 				},

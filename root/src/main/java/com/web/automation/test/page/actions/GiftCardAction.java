@@ -77,6 +77,8 @@ public class GiftCardAction extends GlobalExceptionHandler{
 			giftCardHelper.selectTermsOfUseCheckbox();
 			giftCardHelper.clickonProceedToPaymentButton();
 			giftCardHelper.clickonPayNowButton();
+			giftCardHelper.selectCreditCard();
+			giftCardHelper.clickonPayNowButton();
 			WebElementOperationsWeb.captureScreenShotOnPass(driver, testCaseName, "CardDetails");
 		} catch (Exception e) {
 			WebElementOperationsWeb.captureScreenShotOnFail(driver, testCaseName, "CardDetails");
@@ -95,6 +97,7 @@ public class GiftCardAction extends GlobalExceptionHandler{
 			giftCardHelper.sendCardNumber(testCaseName, sheetName, serialNo);
 			giftCardHelper.sendExpiryDate(testCaseName, sheetName, serialNo);
 			giftCardHelper.sendCVVNumber(testCaseName, sheetName, serialNo);
+			giftCardHelper.selectCreditCardCheckBox();
 			giftCardHelper.clickonProceedToPayButton();
 			giftCardHelper.clickonOptOutForNowButton();
 			WebElementOperationsWeb.waitForPageLoad(driver, 10);
